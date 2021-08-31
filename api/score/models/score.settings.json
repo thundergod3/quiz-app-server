@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scores",
+  "info": {
+    "name": "scores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "questionCount": {
+      "type": "biginteger",
+      "required": true
+    },
+    "score": {
+      "type": "biginteger",
+      "required": true
+    },
+    "quiz": {
+      "model": "quiz"
+    },
+    "scoredAnswers": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
